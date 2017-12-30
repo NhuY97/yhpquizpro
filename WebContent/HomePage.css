@@ -1,0 +1,59 @@
+html{box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;overflow-x:hidden}
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}
+*,*:before,*:after{box-sizing:inherit}
+body{margin:0px;}
+.icon1{width: 35px;height: 35px;margin-right: 30px;}
+.icon2{width: 25px;height: 25px!important;margin-right: 5px}
+a{text-decoration: none!important;cursor: pointer!important;}
+/*Nav Bar*/
+.nav-top{position: fixed;width:100%;z-index: 1;top:0}
+.nav-top .bar{width:100%;overflow:hidden;color:#000 !important;background-color:#fff !important;
+    letter-spacing: 2px;padding: 8px 16px !important;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.nav-top .bar .item {padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block;
+    white-space: normal;cursor: default;user-select: none}
+.nav-top .bar .item:hover {background-color:#ccc !important;}
+.nav-top .bar .option {float:right !important;}
+.nav-top a{background-color:transparent;text-decoration:none;color:inherit}
+.logo img{transform: translate(0px,6px)}
+/* Header */
+.headercontainer {max-width: 1500px;position: relative;margin: auto;}
+.headercontainer img{max-width:100%;opacity: 0.7;}
+.headercontainer .text-center {position: absolute;top: 50%;left: 50%;display: inline-block;
+    text-align: center !important;letter-spacing: 6px;font-size: xx-large;
+    transform: translate(-50%,-50%) scale(1.2,1);-moz-transform: translate(-50%,-50%) scale(1.2,1);}
+.headercontainer .text-center .text-black {padding: 8px 16px;color:#fff !important;
+    background-color:#000 !important;opacity: 0.75;user-select: none;cursor: default}
+.headercontainer .text-center .title {color:#0033ff;background-color:rgba(241,241,241,0.7)}
+/* Contact */
+.contactcontainer {padding: 32px 32px}
+.contactcontainer .border-bottom{border-bottom: 1px solid gray !important;padding-top: 16px;padding-bottom: 16px;}
+.myrow{width:80%;margin:auto;}
+.column{float:left;width:33.3%;padding: 0 8px;margin-bottom: 16px;}
+/* if device of screen is small */
+@media (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+.column img{height: 300px}
+.column:hover{box-shadow: 3px 4px 5px silver}
+.cardcontainer{box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);padding: 10px}
+    /* Clear floats */
+.cardcontainer::after, .myrow::after {content: "";clear: both;display: table;}
+.title {color: grey;}
+/* Footer */
+.myfooter{text-align: center !important;padding: 16px 16px;color:#fff;background-color: #000}
+.myfooter a{color:inherit}
+.myfooter a:hover{color:green}
+/*Model Login*/
+.modal-header, h4, .close {
+    background-color: #31b0d5;
+    color:white !important;
+    text-align: center;
+    font-size: 30px;
+}
+.modal-content{width: 70%;margin: auto;margin-top: 70px}
+.modal-footer {
+    background-color: #f9f9f9;
+}

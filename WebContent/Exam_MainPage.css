@@ -1,0 +1,253 @@
+﻿html{box-sizing:border-box;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;overflow-x:hidden}
+html,body{font-family:Verdana,Arial,sans-serif;font-size:15px;line-height:1.5}
+*,*:before,*:after{box-sizing:inherit}
+body{margin: 0px;background-color: #F8F8FF}
+h1{cursor: default}
+a{text-decoration: none!important;cursor: pointer!important;}
+.icon1{width: 35px;height: 35px;margin-right: 30px;}
+.icon2, .icon{width: 25px;height: 25px;margin-right: 5px}
+.mynav-top{position: fixed;width:100%;z-index: 1;top:0;}
+.mynav-top .mybar{width:100%;overflow:hidden;color:#000 !important;background-color:#fff !important;height: 15%;
+    letter-spacing: 2px;padding: 8px 16px !important;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.mynav-top .mybar .item1{padding:8px 16px;float:left;width:auto;border:none;outline:none;display:block;
+    white-space: normal;cursor: default;user-select: none;color: #555555}
+.mynav-top .mybar .item1:hover{color: #000;transform: scale(1.1,1.1);text-decoration: none}
+.mynav-top .mybar .item2{color:gray}
+.mynav-top .mybar .item2:hover{color: black;text-decoration: none}
+.mynav-top .mybar .option {float:right !important;}
+.logo{font-size: x-large;color: black}
+.logo img{transform: translate(0px,6px); width:50px;height:40px}
+.mynav-top a{background-color:transparent;text-decoration:none;color:inherit}
+.search{width: 130px;height: 30px;border: 1px groove gray;border-radius: 5px;
+    transform: translate(20px,20px);-moz-transform: translate(20px,20px); outline: none;
+    background-image: url("Icons/search.png"); background-repeat: no-repeat;background-position: left;
+    background-size: contain;padding-left: 30px;font-size: 15px;color: #555555;transition: width 0.7s}
+.search:focus{background-image: url("Icons/search2.png");border:2px solid #50c1e9;width: 210px}
+.mycontainer{position:relative;top:90px!important;width: 90%;margin: auto;}
+.session{width: 100%;box-shadow: 1px 1px 2px gray;background-color: white;padding: 10px}
+.session:after{content: "";clear: both;display: block}
+.trend-menu{float: left;width: 60%;color: #555555;max-height: 1000px;overflow: auto}
+.trend-create{float: right;width: 40%;}
+.session .trend-menu ul{list-style-image: url('Icons/top.png');font-size: x-large;}
+.session .trend-menu ul li{padding: 10px 10px;cursor: pointer;border-radius: 8px;transition: background-color 1s;color:#824607}
+.session .trend-menu ul>a{font-size: large;margin-left: 70%;cursor: pointer;color: orange;}
+.session .trend-menu ul>a:hover{color: #50c1e9}
+.session .trend-menu li a:hover{color:#2788a5}
+.session .trend-menu li p{font-size:small;font-style: italic;color:#000}
+@media (max-width: 1290px) {
+	#slider ul li,.pro-text{width:400px !important;}
+}
+@media (max-width: 990px) {
+    .trend-menu,.trend-create{
+        width: 92% !important;
+        display: block;
+        float: none;
+    }
+    .session .trend-menu ul>a{
+        margin-left: 5px!important;
+    }
+    .session .trend-menu li{
+        font-size: large!important;
+    }
+    .container{width: 100%!important;}
+    .mynav-top{
+        position: relative;
+    }
+    .pro-text{width: 330px!important;}
+    .option:before {content:".";display: block!important;visibility: hidden}
+    .bar{padding-left: 10px!important;}
+    	 #slider ul li,.pro-text{width: 600px !important;}
+    	 .sub-list,.trend-menu{height: auto !important;}
+}
+@media (max-width: 550px) {
+	    .session .trend-menu li{
+        font-size: medium!important;
+    }
+	.session,.trend-create,.mycontainer{width:100% !important;}
+	 .sub-list,.trend-menu{margin-left:0px !important;height: auto !important;}
+	 .trend-menu{padding-left:0px !important;max-height:none}
+	 .trend-create{padding:0px !important;}
+	 .mybottom .bar-create .create{font-size:small !important;}
+	 .mybottom{padding:0px !important;}
+	 .header-text{font-size:large !important;}
+	 #slider ul li,marquee{width: 260px !important;}
+	 .icon1{width: 21px;height: 21px;margin-right:7px;margin-left:5px;}
+}
+/*slide*/
+#slider {position: relative;overflow: hidden;margin-left: 20px;border-radius: 4px;margin-top: 10px}
+#slider ul {display:none;}
+#slider ul {position: relative;margin: 0; padding: 0;height: 200px;list-style: none;}
+#slider ul li {position: relative;display: block;float: left;margin: 0;padding: 0;width: 450px;height: 250px;
+    background: #ccc;text-align: center;line-height: 300px;background-color: white}
+#slider ul li img{width: 450px;height: 250px}
+/*footer*/
+.mybottom{position: fixed;width: 100%;z-index: 1;bottom:0;background-color: white;box-shadow:2px 0px 5px 0 rgba(0,0,0,0.16);padding: 10px 0px}
+.mybottom .bar-create{position: relative;,max-width: 100%;}
+.mybottom .bar-create .create{float: left!important;padding-top: 2px;cursor: pointer;font-family: Verdana, sans-serif;
+    font-size: medium;text-align: center;color:#0033ff;margin-top:5px}
+.mybottom .bar-create .create:hover{transform: scale(1.1,1.1);transition: transform 1s}
+.end{margin-bottom: 150px;background-color: transparent}
+.pro-text{margin-left:20px;margin-top:10px;width: 450px;min-height: 250px;font-size: large;overflow: hidden;
+    letter-spacing: 3px;word-spacing: 5px;line-height: 40px;color: #00B2BF;cursor: default;padding: 10px;background-color: white;background-position: bottom}
+marquee{text-align: justify!important;}
+.session .sub-list{float:left;border: 1px solid red;height: 220px;border-radius: 10px;
+    background-color: white;margin-left: 60px;margin-top: 10px;overflow:auto}
+.session .sub-list ul{list-style: none;padding-top: 10px}
+.session .sub-list ul li{padding-bottom: 10px;cursor: pointer;font-size: 17px}
+.session .sub-list ul li:first-child{padding-bottom: 15px}
+.session .sub-list ul li:first-child:hover{color: black}
+.session .sub-list ul li:hover {color: yellow;font-size: large}
+.session .sub-list:hover{background-color: #e0b367;color: white;border-color: white}
+/*Exam View*/
+.exInfo{margin:30px;padding: 10px 15px;width: 45%;border: 1px solid red;float: left;border-radius: 7px}
+.exInfo ol{height: 100px;overflow: auto;width: 200px}
+.exInfo:hover{box-shadow: 2px 3px 5px pink}
+.exName:before{content: "Tên kỳ thi: ";font-weight: bold;color: red}
+.testName:before{content: "Tên đề thi: ";font-weight: bold;color: #00B2BF}
+.timeTest:before{content: "Thời gian làm bài thi: ";font-weight: bold;color: #00B2BF}
+.dateTest:before{content: "Thời gian bắt đầu thi: ";font-weight: bold;color: #00B2BF}
+.dateCreate:before{content: "Ngày tạo/cập nhật gần nhất: ";font-weight: bold;color: #00B2BF}
+.creator:before{content: "Người tạo: ";font-weight: bold;color: #00B2BF}
+.className:before{content: "Lớp thi: ";font-weight: bold;color: #00B2BF}
+.iconOpt{float: right!important;cursor: pointer;}
+.iconOpt:hover{box-shadow: 1px 1px 3px #000}
+.badge{background-color: yellow!important;color: red!important;margin-left:10px}
+.info table td{padding: 10px; font-weight: bold;font-size: xx-large}
+.info table td:nth-child(even){color:blue}
+.tableinfo{font-size: medium}
+.tableinfo td:nth-child(even){padding-left: 70px;color: orangered}
+.tableinfo ul li{display: inline-block;margin-left: 0px}
+li{list-style: none;}
+#listSub li{margin-top: 50px}
+h3:hover{color:orangered}
+nav .nav{background-color:#684c15;}
+
+    nav .nav a{color:white !important}
+    nav li:hover{background-color:#8c7444}
+  nav.sidebar, .main{
+    -webkit-transition: margin 200ms ease-out;
+      -moz-transition: margin 200ms ease-out;
+      -o-transition: margin 200ms ease-out;
+      transition: margin 200ms ease-out;
+  }
+
+  .main{
+    padding: 10px 10px 0 10px;
+  }
+ @media (min-width: 765px) {
+ .dataShow{width:90% !important}
+    .main{
+      position: absolute;
+      width: calc(100% - 50px); 
+      margin-left: 50px;
+      float: right;
+    }
+
+    nav.sidebar:hover + .main{
+      margin-left: 200px;
+    }
+
+    nav.sidebar.navbar.sidebar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+      margin-left: 0px;
+    }
+
+    nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
+      text-align: center;
+      width: 100%;
+      margin-left: 0px;
+    }
+    
+    nav.sidebar a{
+      padding-right: 13px;
+    }
+
+    nav.sidebar .navbar-nav > li:first-child{
+      border-top: 1px #e5e5e5 solid;
+    }
+
+    nav.sidebar .navbar-nav > li{
+      border-bottom: 1px #e5e5e5 solid;
+    }
+
+    nav.sidebar .navbar-nav .open .dropdown-menu {
+      position: static;
+      float: none;
+      width: auto;
+      margin-top: 0;
+      background-color: #ed9025;
+      border: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+
+    nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
+      padding: 0 0px 0 0px;
+    }
+
+    nav.sidebar{
+      width: 200px;
+      height: 100%;
+      margin-left: -160px;
+      float: left;
+      margin-bottom: 0px;
+    }
+
+    nav.sidebar li {
+      width: 100%;
+    }
+
+    nav.sidebar:hover{
+      margin-left: 0px;
+    }
+
+    .forAnimate{
+      opacity: 0;
+    }
+  }
+   
+  @media (min-width: 1330px) {
+      nav{position:fixed !important;height:auto !important;}
+.dataShow{width:80% !important}
+    .main{
+      width: calc(100% - 200px);
+      margin-left: 200px;
+    }
+
+    nav.sidebar{
+      margin-left: 0px;
+      float: left;
+    }
+
+    nav.sidebar .forAnimate{
+      opacity: 1;
+    }
+  }
+   nav.sidebar .navbar-nav .open .dropdown-menu>li>a:hover{
+	color: red !important;
+	}
+  nav:hover .forAnimate{
+    opacity: 1;
+  }
+  section{
+    padding-left: 15px;
+  }
+    .choosed{background-color:#8c7444;}
+  table th{text-align:center;color:#ed9025}
+  table td a:hover span{color:green !important}
+  table tr:hover{border-left:3px solid #ed9025;color: #ed9025}
+  #formquestion, #footerQ{display:none;}
+  .ani:hover{background-color:yellow; transform:scale(1.1,1); transition:transform 0.5s}
+  .ani{
+  	font-size:20px !important;
+  	color:#ff0000;
+  	font-weight:bold;
+  	height:100px;
+  	cursor:pointer;
+  	text-align:center;
+  	margin-left:40px;
+  	padding-top: 33px;
+  	margin-bottom:10px;
+  	border:2px groove green;
+  	border-radius: 20px;
+  	position:relative;    
+	}
